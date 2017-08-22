@@ -1,21 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-    <meta charset="utf-8">
-    <title>Front-End Sample</title>
-    <!--[if lt IE 9]>
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta charset="utf-8">
+  <title>Front-End Sample</title>
+  <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link href="assets/css/plugins/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/plugins/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <div class="container">
+  <link href="assets/css/plugins/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/plugins/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/richtext.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/plugins/emoji.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/plugins/wysiwyg-editor.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/bootstrap-checkbox.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/spacing.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container m_messages-wrapper">
+    <div class="row">
+      <div class="col-sm-6 col-xs-6">
+        <h4>メッセージを作成</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 text-right">
+        <button class="btn btn-default btn-white-1">プレビュー</button>
+        <button class="btn btn-primary btn-blue-1">保存する</button>
+      </div>
     </div>
-    <script src="assets/js/plugins/jquery.min.js"></script>
-    <script src="assets/js/plugins/bootstrap.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
-  </body>
+
+    <div class="row m_messages">
+      <div class="row m_infor">
+        <div class="col-sm-6 m_infor-left text-right">
+          ID: 000001
+        </div>
+        <div class="col-sm-6 m_infor-right text-right">
+          <span class="m_infor-username">登録者：Kotty</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="m_infor-updated">更新日時：2017/08/21</span>
+        </div>
+      </div>
+
+      <div class="row m_general">
+        <h5>メッセージ設定</h5>
+        <hr>
+        <div class="mrg20T m_message-type">
+          <label>タイプ：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="m_clear-sp"></div>
+          <div class="radio radio-primary radio-inline">
+            <input type="radio" value="" checked="checked" name="" id="">
+            <label for="">オープニングメッセージ</label>
+          </div>
+          <div class="radio radio-primary radio-inline">
+            <input type="radio" value="" name="" id="">
+            <label for="">ミドルメッセージ</label>
+          </div>
+          <div class="radio radio-primary radio-inline">
+            <input type="radio" value="" name="" id="">
+            <label for="">クロージングメッセージ</label>
+          </div>
+        </div>
+        <div class="mrg10T m_activity-priority">
+          <label>アクティビティ：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="radio radio-primary radio-inline">
+            <input type="radio" value="" checked="checked" name="" id="">
+            <label for="">有効</label>
+          </div>
+          <div class="radio radio-primary radio-inline">
+            <input type="radio" value="" name="" id="">
+            <label for="">無効</label>
+          </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="m_clear-sp"></div>
+          <label>プライオリティ：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="number" class="m_priority-input" value="50" />
+        </div>
+        <div class="row mrg10T m_keyword">
+          <div class="col-sm-6 mrg10B m_input-wrapper">
+            <input type="text" class="m_input" value="" maxlength="255" placeholder="主キーワード※：" />
+            <span class="m_input-selection">設定</span>
+          </div>
+          <div class="col-sm-6 mrg10B pad0L m_input-wrapper">
+            <input type="text" class="m_input" value="" maxlength="255" placeholder="関連キーワード：" />
+            <span class="m_input-selection">設定</span>
+          </div>
+        </div>
+        <div class="row m_tag">
+          <div class="col-sm-12 m_input-wrapper">
+            <input type="text" class="m_input" value="" maxlength="255" placeholder="タグ：" />
+            <span class="m_input-selection">設定</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row m_editor mrg25T">
+        <h5>メッセージ本文</h5>
+        <hr>
+        <div class="m_button-tab-wrapper text-center">
+          <button class="btn btn-default m_button-tab">テキスト</button>
+          <button class="btn btn-default m_button-tab">クエッション</button>
+          <button class="btn btn-default m_button-tab">リンクカード</button>
+          <button class="btn btn-default m_button-tab">商品</button>
+          <button class="btn btn-default m_button-tab">画像</button>
+          <button class="btn btn-default m_button-tab">動画</button>
+          <button class="btn btn-default m_button-tab">引用</button>
+        </div>
+
+        <!-- Message Editor -->
+        <div class="m_editor-text-1 mrg20T">
+
+          <div class="m_editor-content">
+            <!-- Message Editor Content -->
+            <h5>テキスト</h5>
+            <div class="m_editor-text-textarea">
+              <div class="m_editor-textarea">
+                <div class="textarea">胸が小さいとお悩みですか？</div>
+                <i class="fa fa-play" aria-hidden="true"></i>
+              </div>
+              <div class="m_editor-textarea-emoji">
+                <div>
+                  <img src="https://cdn3.iconfinder.com/data/icons/3d-printing-icon-set/512/Engineer.png" />
+                  <span>笑顔笑顔</span>
+                </div>
+              </div>
+              <div style="clear: both"></div>
+            </div>
+            <!-- End Message Editor Content -->
+          </div>
+
+          <div class="m_editor-action">
+            <div class="col-sm-6 col-xs-6 m_editor-action-button">
+              <button type="button" class="btn btn-primary btn-blue-2 mrg5B"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> 編集</button><br>
+              <button type="button" class="btn btn-default btn-blue-2"><i class="fa fa-trash-o" aria-hidden="true"></i> 削除</button>
+            </div>
+            <div class="col-sm-6 col-xs-6 m_editor-rank-button">
+              <div class="">
+                <button type="button" class="m_editor-position-button up"><i class="fa fa-play" aria-hidden="true"></i></button>
+                <button type="button" class="m_editor-position-button top"><i class="fa fa-fast-forward" aria-hidden="true"></i></button>
+              </div>
+              <div class="">
+                <button type="button" class="m_editor-position-button down"><i class="fa fa-play" aria-hidden="true"></i></button>
+                <button type="button" class="m_editor-position-button bottom"><i class="fa fa-fast-forward" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- End Message Editor -->
+
+        <div class="m_editor-text-2 mrg20T">
+          <div class="m_editor-content">
+            <h5>テキスト</h5>
+            <div class="m_editor-text-textarea">
+              <div class="m_editor-textarea">
+                <textarea id="m_textarea"></textarea>
+                <textarea id="m_textarea-2" class="mrg20T"></textarea>
+                <input type="text" data-emojiable="true" style="display: none;" />
+              </div>
+              <div class="m_editor-textarea-emoji">
+                <div>
+                  <img src="https://cdn3.iconfinder.com/data/icons/3d-printing-icon-set/512/Engineer.png" />
+                  <select class="form-control">
+                      <option>普通</option>
+                      <option>微笑み</option>
+                      <option>怒り</option>
+                      <option>悲しい</option>
+                      <option>疑問の顔</option>
+                    </select>
+                </div>
+              </div>
+              <div style="clear: both"></div>
+            </div>
+            <div class="m_tool-wrapper">
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <script src="assets/js/plugins/jquery.min.js"></script>
+  <script src="assets/js/plugins/bootstrap.min.js"></script>
+  <script src="assets/js/plugins/jquery.richtext.min.js"></script>
+  <script src="assets/js/plugins/emoji/config.js"></script>
+  <script src="assets/js/plugins/emoji/util.js"></script>
+  <script src="assets/js/plugins/emoji/jquery.emojiarea.js"></script>
+  <script src="assets/js/plugins/emoji/emoji-picker.js"></script>
+  <script src="assets/js/plugins/wysiwyg.js"></script>
+  <script src="assets/js/plugins/wysiwyg-editor.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/text-editor.js"></script>
+</body>
+
 </html>
