@@ -14,6 +14,18 @@ $main-color: #286bcc;
   color: white;
   font-size: 11px;
   width: 100px;
+  background-color: $main-color;
+}
+
+.btn-blue-2 {
+  font-size: 11px;
+  width: 60px;
+  background-color: $main-color;
+}
+
+.btn-white-2 {
+  font-size: 11px;
+  width: 60px;
 }
 
 hr {
@@ -118,18 +130,67 @@ hr {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .m_clear-sp {
-    display: block;
+.m_editor-action {
+  position: absolute;
+  right: 0;
+  top: 32px;
+  width: 140px;
+  .m_editor-action-button {
+    padding: 0;
+    width: 65px;
   }
-  .m_input-wrapper {
-    padding-left: 15px !important;
-  }
-  .m_editor {
-    .m_button-tab-wrapper {
-      .m_button-tab {
-        $m_button_tab_size: (100%/3.5);
-        width: $m_button_tab_size !important;
+  .m_editor-rank-button {
+    padding: 0;
+    .m_editor-position-button {
+      background-color: rgb(150, 150, 150);
+      border: none;
+      color: #fff;
+      margin-bottom: 3px;
+    }
+    .up {
+      transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      width: 28px;
+      height: 28px;
+      i {
+        margin-top: 4px;
+      }
+    }
+    .down {
+      transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      width: 28px;
+      height: 28px;
+      i {
+        margin-top: 4px;
+      }
+    }
+    .top {
+      transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      width: 25px;
+      height: 25px;
+    }
+    .bottom {
+      transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      width: 25px;
+      height: 25px;
+      vertical-align: top;
+      i {
+        margin-top: 4px;
       }
     }
   }
@@ -182,79 +243,6 @@ hr {
             margin-right: 10px;
             border: 1px solid #bbb;
           }
-        }
-      }
-    }
-  }
-  .m_editor-action {
-    position: absolute;
-    right: 0;
-    top: 32px;
-    width: 140px;
-    .m_editor-action-button {
-      padding: 0;
-      width: 65px;
-      .btn-blue-2 {
-        font-size: 11px;
-        width: 60px;
-      }
-      .btn-white-2 {
-        font-size: 11px;
-        width: 60px;
-      }
-    }
-    .m_editor-rank-button {
-      padding: 0;
-      .m_editor-position-button {
-        background-color: rgb(150, 150, 150);
-        border: none;
-        color: #fff;
-        margin-bottom: 3px;
-      }
-      .up {
-        transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        width: 28px;
-        height: 28px;
-        i {
-          margin-top: 4px;
-        }
-      }
-      .down {
-        transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        width: 28px;
-        height: 28px;
-        i {
-          margin-top: 4px;
-        }
-      }
-      .top {
-        transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        width: 25px;
-        height: 25px;
-      }
-      .bottom {
-        transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        width: 25px;
-        height: 25px;
-        vertical-align: top;
-        i {
-          margin-top: 4px;
         }
       }
     }
@@ -404,6 +392,109 @@ hr {
   }
 }
 
+.m_editor-quote-1 {
+  position: relative;
+  padding: 16px 20px 20px;
+  background-color: rgb(235, 235, 235);
+  .m_editor-content {
+    width: 85%;
+    border-right: 1px solid #fff;
+    padding-right: 30px;
+    position: relative;
+    .m_editor-quote-textarea {
+      width: 100%;
+      .m_quote-content-wrapper {
+        width: 85%;
+        position: relative;
+        float: left;
+        padding-right: 10px;
+        .m_quote-content {
+          width: 100%;
+          border: none;
+          border-radius: 5px;
+          padding: 13px;
+          max-width: 100%;
+          background-color: #fff;
+          min-height: 50px;
+          height: auto;
+          line-height: 25px;
+          .m_quote-title {
+            line-height: 20px;
+            span {
+              color: #888;
+            } 
+          }
+          .m_quote-reference {
+            line-height: 20px;
+            margin-bottom: 5px;
+            a small {
+              color: #888;
+              font-size: 10px;
+            }
+          }
+          .m_quote-comment {
+            color: #888;
+            font-size: 11px;
+            border-left: 5px solid #888;
+            line-height: 20px;
+            padding-left: 5px;
+          }
+        }
+      }
+      .m_quote-edit {
+        width: 15%;
+        float: left;
+        button {
+          margin-top: 20px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.m_editor-quote-2 {
+  position: relative;
+  padding: 16px 20px 20px;
+  background-color: rgb(244, 249, 254);
+  border: 1px solid rgb(200, 214, 240);
+  .m_editor-content {
+    width: 100%;
+    border-right: 1px solid #fff;
+    position: relative;
+    textarea {
+      width: 100%;
+      border: 1px solid rgb(108, 150, 200);
+      padding: 13px;
+      max-width: 100%;
+      min-height: 25px;
+      line-height: 25px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    input {
+      width: 100%;
+      border: 1px solid rgb(108, 150, 200);
+      padding: 13px;
+      height: 25px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .m_quote-title {
+      
+    }
+    .m_quote-reference {
+      
+    }
+    .m_quote-link {
+      
+    }
+    .m_quote-comment {
+      
+    }
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .m_editor-text-1 {
     .m_editor-content {
@@ -416,6 +507,11 @@ hr {
           width: 18%;
         }
       }
+    }
+  }
+  .m_editor-quote-1 {
+    .m_editor-content {
+      padding-right: 10px; 
     }
   }
 }
@@ -442,6 +538,41 @@ hr {
         }
         .m_editor-textarea-emoji {
           width: 32%;
+        }
+      }
+    }
+  }
+  .m_editor-quote-1 {
+    .m_editor-content {
+      width: 79%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .m_clear-sp {
+    display: block;
+  }
+  .m_input-wrapper {
+    padding-left: 15px !important;
+  }
+  .m_editor {
+    .m_button-tab-wrapper {
+      .m_button-tab {
+        $m_button_tab_size: (100%/3.5);
+        width: $m_button_tab_size !important;
+      }
+    }
+  }
+  .m_editor-quote-1 {
+    .m_editor-content {
+      width: 76%;
+      .m_editor-quote-textarea {
+        .m_quote-content-wrapper {
+          width: 82%;
+        }
+        .m_quote-edit {
+          width: 18%;
         }
       }
     }
@@ -477,12 +608,31 @@ hr {
       }
     }
   }
+  .m_editor-quote-1 {
+    .m_editor-content {
+      width: 73%;
+      .m_editor-quote-textarea {
+        .m_quote-content-wrapper {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        .m_quote-edit {
+          width: 30%;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 560px) {
   .m_editor-text-1 {
     .m_editor-content {
       width: 65%;
+    }
+  }
+  .m_editor-quote-1 {
+    .m_editor-content {
+      width: 64%;
     }
   }
 }
@@ -496,6 +646,16 @@ hr {
   .m_editor-text-1 {
     .m_editor-content {
       width: 55%;
+    }
+  }
+  .m_editor-quote-1 {
+    .m_editor-content {
+      width: 55%;
+      .m_editor-quote-textarea {
+        .m_quote-edit {
+          width: 50%;
+        }
+      }
     }
   }
 }

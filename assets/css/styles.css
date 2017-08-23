@@ -9,7 +9,17 @@
 .btn-blue-1 {
   color: white;
   font-size: 11px;
-  width: 100px; }
+  width: 100px;
+  background-color: #286bcc; }
+
+.btn-blue-2 {
+  font-size: 11px;
+  width: 60px;
+  background-color: #286bcc; }
+
+.btn-white-2 {
+  font-size: 11px;
+  width: 60px; }
 
 hr {
   margin-top: 10px;
@@ -87,15 +97,61 @@ hr {
       background-color: #337ab7;
       color: #fff; }
 
-@media screen and (max-width: 768px) {
-  .m_clear-sp {
-    display: block; }
+.m_editor-action {
+  position: absolute;
+  right: 0;
+  top: 32px;
+  width: 140px; }
+  .m_editor-action .m_editor-action-button {
+    padding: 0;
+    width: 65px; }
+  .m_editor-action .m_editor-rank-button {
+    padding: 0; }
+    .m_editor-action .m_editor-rank-button .m_editor-position-button {
+      background-color: #969696;
+      border: none;
+      color: #fff;
+      margin-bottom: 3px; }
+    .m_editor-action .m_editor-rank-button .up {
+      transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      width: 28px;
+      height: 28px; }
+      .m_editor-action .m_editor-rank-button .up i {
+        margin-top: 4px; }
+    .m_editor-action .m_editor-rank-button .down {
+      transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      width: 28px;
+      height: 28px; }
+      .m_editor-action .m_editor-rank-button .down i {
+        margin-top: 4px; }
+    .m_editor-action .m_editor-rank-button .top {
+      transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      width: 25px;
+      height: 25px; }
+    .m_editor-action .m_editor-rank-button .bottom {
+      transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      width: 25px;
+      height: 25px;
+      vertical-align: top; }
+      .m_editor-action .m_editor-rank-button .bottom i {
+        margin-top: 4px; }
 
-  .m_input-wrapper {
-    padding-left: 15px !important; }
-
-  .m_editor .m_button-tab-wrapper .m_button-tab {
-    width: 28.57143% !important; } }
 .m_editor-text-1 {
   position: relative;
   padding: 16px 20px 20px;
@@ -139,66 +195,6 @@ hr {
             border-radius: 50px;
             margin-right: 10px;
             border: 1px solid #bbb; }
-  .m_editor-text-1 .m_editor-action {
-    position: absolute;
-    right: 0;
-    top: 32px;
-    width: 140px; }
-    .m_editor-text-1 .m_editor-action .m_editor-action-button {
-      padding: 0;
-      width: 65px; }
-      .m_editor-text-1 .m_editor-action .m_editor-action-button .btn-blue-2 {
-        font-size: 11px;
-        width: 60px; }
-      .m_editor-text-1 .m_editor-action .m_editor-action-button .btn-white-2 {
-        font-size: 11px;
-        width: 60px; }
-    .m_editor-text-1 .m_editor-action .m_editor-rank-button {
-      padding: 0; }
-      .m_editor-text-1 .m_editor-action .m_editor-rank-button .m_editor-position-button {
-        background-color: #969696;
-        border: none;
-        color: #fff;
-        margin-bottom: 3px; }
-      .m_editor-text-1 .m_editor-action .m_editor-rank-button .up {
-        transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        width: 28px;
-        height: 28px; }
-        .m_editor-text-1 .m_editor-action .m_editor-rank-button .up i {
-          margin-top: 4px; }
-      .m_editor-text-1 .m_editor-action .m_editor-rank-button .down {
-        transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        width: 28px;
-        height: 28px; }
-        .m_editor-text-1 .m_editor-action .m_editor-rank-button .down i {
-          margin-top: 4px; }
-      .m_editor-text-1 .m_editor-action .m_editor-rank-button .top {
-        transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        width: 25px;
-        height: 25px; }
-      .m_editor-text-1 .m_editor-action .m_editor-rank-button .bottom {
-        transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        width: 25px;
-        height: 25px;
-        vertical-align: top; }
-        .m_editor-text-1 .m_editor-action .m_editor-rank-button .bottom i {
-          margin-top: 4px; }
 
 .m_editor-text-2 {
   position: relative;
@@ -305,13 +301,91 @@ hr {
     .m_editor-text-2 .m_editor-content .m_editor-textarea .emoji-wysiwyg-editor {
       display: none; }
 
+.m_editor-quote-1 {
+  position: relative;
+  padding: 16px 20px 20px;
+  background-color: #ebebeb; }
+  .m_editor-quote-1 .m_editor-content {
+    width: 85%;
+    border-right: 1px solid #fff;
+    padding-right: 30px;
+    position: relative; }
+    .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea {
+      width: 100%; }
+      .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-content-wrapper {
+        width: 85%;
+        position: relative;
+        float: left;
+        padding-right: 10px; }
+        .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-content-wrapper .m_quote-content {
+          width: 100%;
+          border: none;
+          border-radius: 5px;
+          padding: 13px;
+          max-width: 100%;
+          background-color: #fff;
+          min-height: 50px;
+          height: auto;
+          line-height: 25px; }
+          .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-content-wrapper .m_quote-content .m_quote-title {
+            line-height: 20px; }
+            .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-content-wrapper .m_quote-content .m_quote-title span {
+              color: #888; }
+          .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-content-wrapper .m_quote-content .m_quote-reference {
+            line-height: 20px;
+            margin-bottom: 5px; }
+            .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-content-wrapper .m_quote-content .m_quote-reference a small {
+              color: #888;
+              font-size: 10px; }
+          .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-content-wrapper .m_quote-content .m_quote-comment {
+            color: #888;
+            font-size: 11px;
+            border-left: 5px solid #888;
+            line-height: 20px;
+            padding-left: 5px; }
+      .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-edit {
+        width: 15%;
+        float: left; }
+        .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-edit button {
+          margin-top: 20px;
+          width: 100%; }
+
+.m_editor-quote-2 {
+  position: relative;
+  padding: 16px 20px 20px;
+  background-color: #f4f9fe;
+  border: 1px solid #c8d6f0; }
+  .m_editor-quote-2 .m_editor-content {
+    width: 100%;
+    border-right: 1px solid #fff;
+    position: relative; }
+    .m_editor-quote-2 .m_editor-content textarea {
+      width: 100%;
+      border: 1px solid #6c96c8;
+      padding: 13px;
+      max-width: 100%;
+      min-height: 25px;
+      line-height: 25px;
+      margin-bottom: 10px;
+      border-radius: 5px; }
+    .m_editor-quote-2 .m_editor-content input {
+      width: 100%;
+      border: 1px solid #6c96c8;
+      padding: 13px;
+      height: 25px;
+      margin-bottom: 10px;
+      border-radius: 5px; }
+
 @media screen and (max-width: 1200px) {
   .m_editor-text-1 .m_editor-content {
     width: 82%; }
     .m_editor-text-1 .m_editor-content .m_editor-text-textarea .m_editor-textarea {
       width: 82%; }
     .m_editor-text-1 .m_editor-content .m_editor-text-textarea .m_editor-textarea-emoji {
-      width: 18%; } }
+      width: 18%; }
+
+  .m_editor-quote-1 .m_editor-content {
+    padding-right: 10px; } }
 @media screen and (max-width: 992px) {
   .m_editor-text-1 .m_editor-content {
     width: 75%; }
@@ -323,7 +397,26 @@ hr {
   .m_editor-text-2 .m_editor-content .m_editor-text-textarea .m_editor-textarea {
     width: 68%; }
   .m_editor-text-2 .m_editor-content .m_editor-text-textarea .m_editor-textarea-emoji {
-    width: 32%; } }
+    width: 32%; }
+
+  .m_editor-quote-1 .m_editor-content {
+    width: 79%; } }
+@media screen and (max-width: 768px) {
+  .m_clear-sp {
+    display: block; }
+
+  .m_input-wrapper {
+    padding-left: 15px !important; }
+
+  .m_editor .m_button-tab-wrapper .m_button-tab {
+    width: 28.57143% !important; }
+
+  .m_editor-quote-1 .m_editor-content {
+    width: 76%; }
+    .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-content-wrapper {
+      width: 82%; }
+    .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-edit {
+      width: 18%; } }
 @media screen and (max-width: 640px) {
   .m_editor-text-1 .m_editor-content {
     width: 70%; }
@@ -337,10 +430,21 @@ hr {
   .m_editor-text-2 .m_editor-content .m_editor-text-textarea .m_editor-textarea-emoji {
     width: 100%; }
     .m_editor-text-2 .m_editor-content .m_editor-text-textarea .m_editor-textarea-emoji > div {
-      margin-left: 0; } }
+      margin-left: 0; }
+
+  .m_editor-quote-1 .m_editor-content {
+    width: 73%; }
+    .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-content-wrapper {
+      width: 100%;
+      margin-bottom: 10px; }
+    .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-edit {
+      width: 30%; } }
 @media screen and (max-width: 560px) {
   .m_editor-text-1 .m_editor-content {
-    width: 65%; } }
+    width: 65%; }
+
+  .m_editor-quote-1 .m_editor-content {
+    width: 64%; } }
 @media screen and (max-width: 480px) {
   .btn-white-1,
   .btn-blue-1 {
@@ -348,4 +452,9 @@ hr {
     margin-bottom: 5px; }
 
   .m_editor-text-1 .m_editor-content {
-    width: 55%; } }
+    width: 55%; }
+
+  .m_editor-quote-1 .m_editor-content {
+    width: 55%; }
+    .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-edit {
+      width: 50%; } }
