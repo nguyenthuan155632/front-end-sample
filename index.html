@@ -15,6 +15,8 @@
   <link href="assets/css/plugins/wysiwyg-editor.css" rel="stylesheet" type="text/css">
   <link href="assets/css/plugins/slick.min.css" rel="stylesheet" type="text/css">
   <link href="assets/css/plugins/slick-theme.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/plugins/basic.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/plugins/dropzone.min.css" rel="stylesheet" type="text/css">
   <link href="assets/css/bootstrap-checkbox.css" rel="stylesheet" type="text/css">
   <link href="assets/css/spacing.css" rel="stylesheet" type="text/css">
   <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
@@ -395,9 +397,112 @@
             </div>
           </div>
         </div>
+        
+        <div class="m_editor-video-1 mrg20T">
+          <div class="m_editor-content">
+            <h5>動画</h5>
+            <div class="m_editor-video-wrapper">
+              <div class="m_video-textarea">
+                <button type="button" class="btn btn-primary btn-blue-1">編集する</button>
+              </div>
+              <div class="m_video-preview">
+                <div class="preview-wrapper">
+                  <iframe class="c_movie_item" width="100%" height="215" src="https://www.youtube.com/embed/UUYMr3VwFns" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div style="clear: both"></div>
+            </div>
+          </div>
+
+          <div class="m_editor-action">
+            <div class="col-sm-6 col-xs-6 m_editor-action-button">
+              <button type="button" class="btn btn-primary btn-blue-2 mrg5B"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> 編集</button><br>
+              <button type="button" class="btn btn-default btn-white-2"><i class="fa fa-trash-o" aria-hidden="true"></i> 削除</button>
+            </div>
+            <div class="col-sm-6 col-xs-6 m_editor-rank-button">
+              <div class="">
+                <button type="button" class="m_editor-position-button up"><i class="fa fa-play" aria-hidden="true"></i></button>
+                <button type="button" class="m_editor-position-button top"><i class="fa fa-fast-forward" aria-hidden="true"></i></button>
+              </div>
+              <div class="">
+                <button type="button" class="m_editor-position-button down"><i class="fa fa-play" aria-hidden="true"></i></button>
+                <button type="button" class="m_editor-position-button bottom"><i class="fa fa-fast-forward" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="m_editor-video-2 mrg20T">
+          <div class="m_editor-content">
+            <h5>動画</h5>
+            <div class="m_editor-video-wrapper">
+              <p>Youtubeまたは動画ファイルをアップロードしてください</p>
+              <div class="m_video-youtube">
+                <input type="text" name="" value="" placeholder="YoutubeのURLを入力してください" />
+                <span class="btn btn-primary btn-blue-1">Youtubeからアップロード</span>
+              </div>
+              <hr>
+              <button type="button" class="btn btn-primary btn-blue-1">動画ファイルをアップロード</button>
+              <div style="clear: both"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="m_editor-photo-1 mrg20T">
+          <div class="m_editor-content">
+            <h5>画像</h5>
+            <div class="m_editor-photo-wrapper">
+              <div class="m_photo-list">
+                <ul>
+                  <li><img src="https://placehold.jp/3d4070/ffffff/640x480.png?text=photo 1" alt="" /></li>
+                  <li><img src="https://placehold.jp/3d4070/ffffff/640x480.png?text=photo 2" alt="" /></li>
+                  <li><img src="https://placehold.jp/3d4070/ffffff/640x480.png?text=photo 3" alt="" /></li>
+                  <li><img src="https://placehold.jp/3d4070/ffffff/640x480.png?text=photo 4" alt="" /></li>
+                  <li><img src="https://placehold.jp/3d4070/ffffff/640x480.png?text=photo 5" alt="" /></li>
+                  <li><img src="https://placehold.jp/3d4070/ffffff/640x480.png?text=photo 6" alt="" /></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-primary btn-blue-1">編集する</button>
+              <div style="clear: both"></div>
+            </div>
+          </div>
+
+          <div class="m_editor-action">
+            <div class="col-sm-6 col-xs-6 m_editor-action-button">
+              <button type="button" class="btn btn-primary btn-blue-2 mrg5B"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> 編集</button><br>
+              <button type="button" class="btn btn-default btn-white-2"><i class="fa fa-trash-o" aria-hidden="true"></i> 削除</button>
+            </div>
+            <div class="col-sm-6 col-xs-6 m_editor-rank-button">
+              <div class="">
+                <button type="button" class="m_editor-position-button up"><i class="fa fa-play" aria-hidden="true"></i></button>
+                <button type="button" class="m_editor-position-button top"><i class="fa fa-fast-forward" aria-hidden="true"></i></button>
+              </div>
+              <div class="">
+                <button type="button" class="m_editor-position-button down"><i class="fa fa-play" aria-hidden="true"></i></button>
+                <button type="button" class="m_editor-position-button bottom"><i class="fa fa-fast-forward" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="m_editor-photo-2 mrg20T">
+          <div class="m_editor-content">
+            <h5>画像</h5>
+            <div class="m_editor-photo-wrapper">
+              <div class="dropzone dropzone-previews" id="photo-dropzone">
+                <div class="dz-default dz-message">
+                  <span>Drop files here to upload</span><br>
+                  <small>(You can upload multiple images. Accept all image file format.)</small>
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary btn-blue-1">編集する</button>
+              <div style="clear: both"></div>
+            </div>
+          </div> 
+        </div>
 
       </div>
-
+ 
     </div>
   </div>
   <script src="assets/js/plugins/jquery.min.js"></script>
@@ -410,6 +515,7 @@
   <script src="assets/js/plugins/wysiwyg.js"></script>
   <script src="assets/js/plugins/wysiwyg-editor.js"></script>
   <script src="assets/js/plugins/slick.min.js"></script>
+  <script src="assets/js/plugins/dropzone.min.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/text-editor.js"></script>
 </body>

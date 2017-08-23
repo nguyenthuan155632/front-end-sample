@@ -36,3 +36,10 @@ $ ->
     slidesToScroll: 1
     focusOnSelect: true
     autoplay: true
+    
+  Dropzone.options.photoDropzone =
+    url: '#'
+    previewsContainer: '.dropzone-previews'
+    uploadMultiple: true
+    parallelUploads: 100
+    maxFiles: 100

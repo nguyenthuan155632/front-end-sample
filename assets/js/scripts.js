@@ -29,7 +29,7 @@
       popupButtonClasses: 'fa fa-smile-o'
     });
     window.emojiPicker.discover();
-    return $('.m_slide_list').slick({
+    $('.m_slide_list').slick({
       speed: 300,
       dots: true,
       arrows: false,
@@ -38,6 +38,13 @@
       focusOnSelect: true,
       autoplay: true
     });
+    return Dropzone.options.photoDropzone = {
+      url: '#',
+      previewsContainer: '.dropzone-previews',
+      uploadMultiple: true,
+      parallelUploads: 100,
+      maxFiles: 100
+    };
   });
 
 }).call(this);
