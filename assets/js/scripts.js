@@ -28,7 +28,16 @@
       assetsPath: './../assets/img',
       popupButtonClasses: 'fa fa-smile-o'
     });
-    return window.emojiPicker.discover();
+    window.emojiPicker.discover();
+    return $('.m_slide_list').slick({
+      speed: 300,
+      dots: true,
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      focusOnSelect: true,
+      autoplay: true
+    });
   });
 
 }).call(this);

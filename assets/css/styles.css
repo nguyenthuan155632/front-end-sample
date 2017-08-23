@@ -371,10 +371,202 @@ hr {
     .m_editor-quote-2 .m_editor-content input {
       width: 100%;
       border: 1px solid #6c96c8;
-      padding: 13px;
-      height: 25px;
+      padding: 8px 13px;
       margin-bottom: 10px;
       border-radius: 5px; }
+
+.m_editor-linkcard-1 {
+  position: relative;
+  padding: 16px 20px 30px;
+  background-color: #ebebeb; }
+  .m_editor-linkcard-1 .m_editor-content {
+    width: 86%;
+    border-right: 1px solid #fff;
+    padding-right: 30px;
+    position: relative; }
+    .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper {
+      width: 100%; }
+      .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-textarea {
+        width: 60%;
+        float: left; }
+        .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-textarea .m_linkcard-url h5 {
+          font-size: 12px;
+          color: #666;
+          margin-top: 20px;
+          margin-bottom: 3px; }
+        .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-textarea .m_linkcard-url p a {
+          font-size: 11px; }
+        .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-textarea .m_linkcard-title h5 {
+          font-size: 12px;
+          color: #666;
+          margin-top: 20px;
+          margin-bottom: 3px; }
+        .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-textarea .m_linkcard-title p {
+          font-size: 11px; }
+        .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-textarea .m_linkcard-description h5 {
+          font-size: 12px;
+          color: #666;
+          margin-top: 20px;
+          margin-bottom: 3px; }
+        .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-textarea .m_linkcard-description p {
+          font-size: 11px; }
+        .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-textarea button {
+          width: 180px;
+          margin-top: 15px; }
+      .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-preview {
+        width: 40%;
+        float: left; }
+        .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-preview .preview-wrapper {
+          width: 90%;
+          float: right; }
+          .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-preview .preview-wrapper img {
+            width: 100%; }
+          .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-preview .preview-wrapper .preview-content {
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-top: 0; }
+            .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-preview .preview-wrapper .preview-content .preview-title {
+              font-size: 11px;
+              font-weight: bold; }
+            .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-preview .preview-wrapper .preview-content .preview-description {
+              font-size: 11px;
+              color: #666;
+              margin-top: 10px;
+              margin-bottom: 3px; }
+  .m_editor-linkcard-1 .m_editor-action {
+    top: 150px; }
+
+.m_editor-linkcard-2 .m_editor-content {
+  position: relative;
+  padding: 16px 20px 30px;
+  background-color: #f4f9fe;
+  border: 1px solid #c8d6f0; }
+  .m_editor-linkcard-2 .m_editor-content .m_editor-linkcard-wrapper input {
+    width: 100%;
+    border: 1px solid #6c96c8;
+    padding: 8px 13px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-top: 5px; }
+  .m_editor-linkcard-2 .m_editor-content .m_editor-linkcard-wrapper button {
+    margin-top: 10px; }
+
+.m_editor-product-1 {
+  position: relative;
+  padding: 16px 20px 30px;
+  background-color: #ebebeb; }
+  .m_editor-product-1 .m_editor-content {
+    width: 86%;
+    border-right: 1px solid #fff;
+    padding-right: 30px;
+    position: relative; }
+    .m_editor-product-1 .m_editor-content .m_editor-product-wrapper {
+      width: 100%; }
+      .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-textarea {
+        width: 60%;
+        float: left; }
+        .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-textarea .m_product-url h5 {
+          font-size: 12px;
+          color: #666;
+          margin-top: 20px;
+          margin-bottom: 3px; }
+        .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-textarea .m_product-url p a {
+          font-size: 11px; }
+        .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-textarea .m_product-title h5 {
+          font-size: 12px;
+          color: #666;
+          margin-top: 20px;
+          margin-bottom: 3px; }
+        .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-textarea .m_product-title p {
+          font-size: 11px; }
+        .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-textarea .m_product-description h5 {
+          font-size: 12px;
+          color: #666;
+          margin-top: 20px;
+          margin-bottom: 3px; }
+        .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-textarea .m_product-description p {
+          font-size: 11px; }
+        .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-textarea .m_product-price {
+          margin-top: 15px; }
+          .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-textarea .m_product-price .m_product-price-1, .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-textarea .m_product-price .m_product-price-2 {
+            padding-left: 0; }
+            .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-textarea .m_product-price .m_product-price-1 strong, .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-textarea .m_product-price .m_product-price-2 strong {
+              font-size: 12px;
+              color: #666;
+              margin-top: 20px;
+              margin-bottom: 3px; }
+        .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-textarea button {
+          width: 180px;
+          margin-top: 20px; }
+      .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-preview {
+        width: 40%;
+        float: left; }
+        .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-preview .preview-wrapper {
+          width: 90%;
+          float: right; }
+          .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-preview .preview-wrapper .m_slide_list {
+            width: 100%; }
+            .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-preview .preview-wrapper .m_slide_list .m_item_slide img {
+              width: 100%; }
+          .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-preview .preview-wrapper .slick-slider {
+            margin-bottom: 0; }
+            .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-preview .preview-wrapper .slick-slider .slick-dots {
+              bottom: -8px; }
+          .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-preview .preview-wrapper .preview-content {
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-top: 0; }
+            .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-preview .preview-wrapper .preview-content .preview-title {
+              font-size: 11px;
+              font-weight: bold; }
+            .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-preview .preview-wrapper .preview-content .preview-tag {
+              font-size: 9px;
+              margin-top: 4px;
+              color: #666; }
+            .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-preview .preview-wrapper .preview-content .preview-description {
+              font-size: 11px;
+              color: #666;
+              margin-top: 8px;
+              margin-bottom: 3px; }
+            .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-preview .preview-wrapper .preview-content .preview-price {
+              margin-top: 6px; }
+              .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-preview .preview-wrapper .preview-content .preview-price span {
+                text-decoration: line-through; }
+              .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-preview .preview-wrapper .preview-content .preview-price strong {
+                color: #d00005;
+                font-size: 15px; }
+  .m_editor-product-1 .m_editor-action {
+    top: 150px; }
+
+.m_editor-product-2 .m_editor-content {
+  position: relative;
+  padding: 16px 20px 30px;
+  background-color: #f4f9fe;
+  border: 1px solid #c8d6f0; }
+  .m_editor-product-2 .m_editor-content .m_editor-product-wrapper .m_editor-input {
+    position: relative;
+    width: 50%; }
+    .m_editor-product-2 .m_editor-content .m_editor-product-wrapper .m_editor-input span {
+      position: absolute;
+      color: #286bcc;
+      right: 12px;
+      top: 15px;
+      font-size: 11px;
+      border-left: 1px solid #aaa;
+      padding-left: 12px;
+      cursor: pointer; }
+  .m_editor-product-2 .m_editor-content .m_editor-product-wrapper input {
+    width: 100%;
+    border: 1px solid #6c96c8;
+    padding: 8px 13px;
+    padding-right: 60px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-top: 5px; }
+  .m_editor-product-2 .m_editor-content .m_editor-product-wrapper button {
+    margin-top: 10px; }
 
 @media screen and (max-width: 1200px) {
   .m_editor-text-1 .m_editor-content {
@@ -385,7 +577,13 @@ hr {
       width: 18%; }
 
   .m_editor-quote-1 .m_editor-content {
-    padding-right: 10px; } }
+    padding-right: 10px; }
+
+  .m_editor-linkcard-1 .m_editor-content {
+    width: 83%; }
+
+  .m_editor-product-1 .m_editor-content {
+    width: 83%; } }
 @media screen and (max-width: 992px) {
   .m_editor-text-1 .m_editor-content {
     width: 75%; }
@@ -400,7 +598,13 @@ hr {
     width: 32%; }
 
   .m_editor-quote-1 .m_editor-content {
-    width: 79%; } }
+    width: 79%; }
+
+  .m_editor-linkcard-1 .m_editor-content {
+    width: 77%; }
+
+  .m_editor-product-1 .m_editor-content {
+    width: 77%; } }
 @media screen and (max-width: 768px) {
   .m_clear-sp {
     display: block; }
@@ -416,7 +620,13 @@ hr {
     .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-content-wrapper {
       width: 82%; }
     .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-edit {
-      width: 18%; } }
+      width: 18%; }
+
+  .m_editor-linkcard-1 .m_editor-content {
+    width: 75%; }
+
+  .m_editor-product-1 .m_editor-content {
+    width: 75%; } }
 @media screen and (max-width: 640px) {
   .m_editor-text-1 .m_editor-content {
     width: 70%; }
@@ -438,13 +648,42 @@ hr {
       width: 100%;
       margin-bottom: 10px; }
     .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-edit {
-      width: 30%; } }
+      width: 30%; }
+
+  .m_editor-linkcard-1 .m_editor-content {
+    width: 70%; }
+    .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-textarea {
+      width: 100%;
+      margin-bottom: 10px; }
+    .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-preview {
+      width: 100%; }
+      .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-preview .preview-wrapper {
+        width: 100%; }
+
+  .m_editor-product-1 .m_editor-content {
+    width: 70%; }
+    .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-textarea {
+      width: 100%;
+      margin-bottom: 10px; }
+    .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-preview {
+      width: 100%; }
+      .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-preview .preview-wrapper {
+        width: 100%; }
+
+  .m_editor-product-2 .m_editor-content .m_editor-product-wrapper .m_editor-input {
+    width: 100%; } }
 @media screen and (max-width: 560px) {
   .m_editor-text-1 .m_editor-content {
     width: 65%; }
 
   .m_editor-quote-1 .m_editor-content {
-    width: 64%; } }
+    width: 64%; }
+
+  .m_editor-linkcard-1 .m_editor-content {
+    width: 65%; }
+
+  .m_editor-product-1 .m_editor-content {
+    width: 65%; } }
 @media screen and (max-width: 480px) {
   .btn-white-1,
   .btn-blue-1 {
@@ -457,4 +696,14 @@ hr {
   .m_editor-quote-1 .m_editor-content {
     width: 55%; }
     .m_editor-quote-1 .m_editor-content .m_editor-quote-textarea .m_quote-edit {
-      width: 50%; } }
+      width: 50%; }
+
+  .m_editor-linkcard-1 .m_editor-content {
+    width: 55%; }
+    .m_editor-linkcard-1 .m_editor-content .m_editor-linkcard-wrapper .m_linkcard-textarea button {
+      width: 100%; }
+
+  .m_editor-product-1 .m_editor-content {
+    width: 55%; }
+    .m_editor-product-1 .m_editor-content .m_editor-product-wrapper .m_product-textarea button {
+      width: 100%; } }
